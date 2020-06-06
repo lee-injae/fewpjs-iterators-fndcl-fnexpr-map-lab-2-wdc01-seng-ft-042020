@@ -17,6 +17,17 @@ let capitalize = questions.map(function(question){
 
 let capitalize = questoins.map( (question) => questions.charAt(0).toUpperCase() + question.slice(1) )
 
+const capitalizeSentence = () => {
+  return questions.map(function(sentence){
+    let firstLetter = sentence[0]
+    let restOfTheSentence = sentence.slice(1)
+    return firstLetter.toUpperCase90 + restOfTheSentence
+  })
+}
+
+const capitalizeSentence1 = () => {
+  return questions.map(sentence => sentence[0].toUpperCase() + sentence.slice(1))
+}
 
 // function capitalizeFirstLetter(question){
 //   return question.charAt(0).toUpperCase() + question.slice(1)
